@@ -43,7 +43,7 @@ const AUTOMATION_PHASES = [
     title: "API & Data Integration",
     description:
       "A commercial property management firm integrates CRM, accounting, and maintenance ticketing systems so leasing teams, finance, and operations always work with up-to-date data—reducing manual errors and speeding up tenant requests.",
-    icons: ['/supabase.svg', '/drive.svg', '/n8n.svg', '/anthropic.svg', '/cursor.svg']
+    icons: ['/supabase.svg', '/drive.svg', '/n8n.svg', '/anthropic_black.svg', '/cursor.svg']
   },
 ];
 
@@ -88,7 +88,7 @@ export function Automations() {
                     // Card 1 (AI Video Generation) gets Zak's photo
                     <div className="flex items-center justify-center w-12 h-12 rounded-xl overflow-hidden">
                       <img 
-                        src="/zak_headshot.jpg" 
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face" 
                         alt="Zak"
                         className="w-full h-full object-cover"
                       />
@@ -97,7 +97,7 @@ export function Automations() {
                     // Card 2 (Workflow Automation) gets Mathew's photo
                     <div className="flex items-center justify-center w-12 h-12 rounded-xl overflow-hidden">
                       <img 
-                        src="/passport photo.jpg" 
+                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" 
                         alt="Mathew"
                         className="w-full h-full object-cover"
                       />
@@ -106,7 +106,7 @@ export function Automations() {
                     // Card 3 (Content Creation) gets Mathew's photo
                     <div className="flex items-center justify-center w-12 h-12 rounded-xl overflow-hidden">
                       <img 
-                        src="/passport photo.jpg" 
+                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" 
                         alt="Mathew"
                         className="w-full h-full object-cover"
                       />
@@ -115,7 +115,7 @@ export function Automations() {
                     // Card 4 (Custom AI Model Training) gets Mathew's photo
                     <div className="flex items-center justify-center w-12 h-12 rounded-xl overflow-hidden">
                       <img 
-                        src="/passport photo.jpg" 
+                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" 
                         alt="Mathew"
                         className="w-full h-full object-cover"
                       />
@@ -124,7 +124,7 @@ export function Automations() {
                     // Card 5 (Chatbots & Virtual Assistants) gets Zak's photo
                     <div className="flex items-center justify-center w-12 h-12 rounded-xl overflow-hidden">
                       <img 
-                        src="/zak_headshot.jpg" 
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face" 
                         alt="Zak"
                         className="w-full h-full object-cover"
                       />
@@ -133,7 +133,7 @@ export function Automations() {
                     // Card 6 (API & Data Integration) gets Mathew's photo
                     <div className="flex items-center justify-center w-12 h-12 rounded-xl overflow-hidden">
                       <img 
-                        src="/passport photo.jpg" 
+                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" 
                         alt="Mathew"
                         className="w-full h-full object-cover"
                       />
