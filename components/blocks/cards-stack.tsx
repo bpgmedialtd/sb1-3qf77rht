@@ -1,11 +1,10 @@
 "use client"
 
 import * as React from "react"
-import { HTMLMotionProps, motion, useScroll, useTransform } from "framer-motion"
 
 import { cn } from "@/lib/utils"
 
-interface CardStickyProps extends Omit<HTMLMotionProps<"div">, "ref"> {
+interface CardStickyProps extends React.HTMLProps<HTMLDivElement> {
   index: number
   incrementY?: number
   incrementZ?: number
@@ -41,48 +40,16 @@ const CardSticky = React.forwardRef<HTMLDivElement, CardStickyProps>(
     },
     ref
   ) => {
-    const cardRef = React.useRef<HTMLDivElement>(null)
     const y = index * incrementY
     const zIndex = index * incrementZ
 
-    // Combine the forwarded ref with the local ref
-    const combinedRef = React.useCallback(
-      (node: HTMLDivElement | null) => {
-        // Type assertion to ensure TypeScript knows cardRef is mutable
-        ;(cardRef as React.MutableRefObject<HTMLDivElement | null>).current = node
-        if (typeof ref === 'function') {
-          ref(node)
-        } else if (ref) {
-          ref.current = node
-        }
-      },
-      [ref]
-    )
-
-    // Track scroll progress for this specific card
-    const { scrollYProgress } = useScroll({
-      target: cardRef,
-      offset: ["start end", "end start"]
-    })
-
-    // Transform scroll progress to opacity values with discrete steps to prevent blur
-    const opacity = useTransform(
-      scrollYProgress, 
-      [0.85, 0.95, 1], 
-      [1, 0.8, 0.3],
-      { clamp: true }
-    )
-
     return (
-      <motion.div
-        ref={combinedRef}
-        layout="position"
+      <div
+        ref={ref}
         style={{
           top: y,
           zIndex,
           backfaceVisibility: "hidden",
-          opacity,
-          // Add CSS properties to ensure crisp text rendering
           WebkitFontSmoothing: "antialiased",
           MozOsxFontSmoothing: "grayscale",
           textRendering: "optimizeLegibility",
@@ -92,7 +59,7 @@ const CardSticky = React.forwardRef<HTMLDivElement, CardStickyProps>(
         {...props}
       >
         {children}
-      </motion.div>
+      </div>
     )
   }
 )
