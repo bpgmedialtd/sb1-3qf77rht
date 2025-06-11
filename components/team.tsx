@@ -11,7 +11,7 @@ const TEAM_MEMBERS = [
     description: 'Designs and implements intelligent automation workflows that streamline business operations and eliminate repetitive tasks.',
     icon: User,
     color: 'bg-blue-500',
-    image: '/passport photo.jpg',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
     tools: [
       { name: 'Bolt', icon: '/bolt-new.svg' },
       { name: 'Anthropic', icon: '/anthropic.svg' },
@@ -25,7 +25,7 @@ const TEAM_MEMBERS = [
     description: 'Specializes in AI-powered video generation and visual content creation that engages audiences and drives conversions.',
     icon: User,
     color: 'bg-green-500',
-    image: '/zak_headshot.jpg',
+    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face',
     tools: [
       { name: 'Webflow', icon: '/webflow.svg' },
       { name: 'Runway', icon: '/runway.svg' },
