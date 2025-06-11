@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import { ArrowRight, Zap, Bot, ChevronDown } from 'lucide-react';
 import { Automations } from '@/components/automations';
 import { Team } from '@/components/team';
-import { Work } from '@/components/work';
 import { FAQ } from '@/components/faq';
 import { Footer } from '@/components/footer';
 
@@ -102,9 +101,6 @@ export default function Home() {
 
       {/* Automations Section */}
       <Automations />
-
-      {/* Work Section */}
-      <Work />
 
       {/* Team Section */}
       <Team />
